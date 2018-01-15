@@ -92,8 +92,7 @@
 
 	#section3 .text {
 	  top: 30%;
-	  right: 15%;
-	  left: 65%;
+	  left: 60%;
 	  position: relative;
 	}
 
@@ -179,6 +178,7 @@
 
 	<script type="text/javascript" src="/js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="/js/examples.js"></script>
+		<script type="text/javascript" src="/js/contact.js"></script>
 
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -186,22 +186,103 @@
 				verticalCentered: false
 			});
 		});
-	</script>
 
+
+
+	</script>
 </head>
 <body>
+
+<nav id="menu">
+	<ul>
+	  <li style="margin-left:10%;"><a href="#section0">KingsCode</a></li>
+		<li style="float:right; margin-right:20%;"><a href="#section3">Collin</a></li>
+	  <li style="float:right; "><a href="#section2">Yarno</a></li>
+
+	</ul>
+</nav>
+
+
+	<div class="contact-panel" id="contact-panel" data-toggler=".is-active">
+	  <a class="contact-panel-button" data-toggle="contact-panel">Stuur ons een mail! </a>
+	  <form action="">
+	    <div class="row">
+	      <label><h6>Volledige naam *</h6>
+	        <input type="text" placeholder="Volledige naam">
+	      </label>
+	    </div>
+	    <div class="row">
+	      <label><h6>Email *</h6>
+	        <input type="email" placeholder="Email adres">
+	      </label>
+	    </div>
+	    <div class="row">
+	      <label><h6>Bericht *</h6>
+	        <textarea placeholder="Vertelt u ons uw zonden" rows="3"></textarea>
+	      </label>
+	    </div>
+	    <div class="contact-panel-actions">
+	      <button class="cancel-button" data-toggle="contact-panel">Nee toch niet</button>
+	      <input type="submit" class="button submit-button" value="Verstuur">
+	    </div>
+	  </form>
+	</div>
 
 
 
 <div id="fullpage">
 
-	<div class="section " id="section0"><div class="text"> <h1>Kingscode</h1><br><h2>Programmeur bedrijf</h2><br><p>Kingscode is een programmeurs bedrijf die websites voor iedereen programmeert. <br> Dus wilt u een website zoek dan contact met ons op. </p> <br> <button href="#" target="_blank" id="contact">Contact</button> </div> </div>
-	<div class="section" id="section2"><div class="text"> <h1>Yarno Bachmann</h1> <br> <h2> Programmeur </h2> <br> <p> Fotograaf/filmmaker als hobby en een liefhebber van muziek<br> en creativiteit. Het maken van websites is mijn passie.<br>Check me op mijn portfolio en op instagram. </p> <br> <button href="https://www.yarnobachmann.nl/" target="_blank" id="button">Portfolio</button> <button href="#" target="_blank" id="button">Contact</button>
-    <a href="https://www.facebook.com/profile.php?id=100011364568974" target="_blank"><img id="facebook" src="/imgs/facebook.png" alt=""></a> <a href="https://www.instagram.com/_yarno_/" target="_blank"><img id="insta" src="/imgs/instagram.png" alt=""></a> <a href="https://www.linkedin.com/in/jarno-bachmann-3b1022137/" target="_blank"><img id="linkedin" src="/imgs/linkedin.png" alt=""></a> </div></div>
-	<div class="section" id="section3"><div class="text"> <h1>Collin Lambers</h1> <br> <h2> Programmeur </h2> <br> <p> gamer en hacker als hobby's en een liefhebber <br> van grafisch design.
-Ik houd van het maken <br>en onderhouden van webapplicaties en <br>de beveiliging hiervan.
-Meer over mij? <br>Kijk op mijn Portfolio. </p> <br> <button href="https://www.yarnobachmann.nl/" target="_blank" id="button">Portfolio</button> <button href="#" target="_blank" id="button">Contact</button>
-    <a href="https://www.facebook.com/profile.php?id=100011364568974" target="_blank"><img id="facebook" src="/imgs/facebook.png" alt=""></a> <a href="https://www.linkedin.com/in/jarno-bachmann-3b1022137/" target="_blank"><img id="linkedin" src="/imgs/linkedin.png" alt=""></a> </div></div>
+	<div class="section " id="section0">
+		<div class="text">
+			<h1>Kingscode</h1>
+			<br>
+			<h2>Programmeur bedrijf</h2>
+			<br>
+			<p>Kingscode is een programmeurs bedrijf die websites voor iedereen programmeert.
+				 <br> Dus wilt u een website zoek dan contact met ons op. </p> <br>
+	  </div>
+	</div>
+	<div class="section" id="section2">
+		<div class="text">
+			<h1>Yarno Bachmann</h1>
+			<br>
+			<h2> Programmeur </h2>
+			 <br>
+			  <p> Fotograaf/filmmaker als hobby en een liefhebber van muziek<br>
+					 en creativiteit. Het maken van websites is mijn passie.<br>
+					 Check me op mijn portfolio en op instagram. </p>
+					  <br>
+						 <a href="https://www.yarnobachmann.nl/" target="_blank">
+							  <button href="#"  id="button">Portfolio</button>
+							</a>
+    <a href="https://www.facebook.com/profile.php?id=100011364568974" target="_blank">
+			<img id="facebook" src="/imgs/facebook.png" alt=""></a> <a href="https://www.instagram.com/_yarno_/" target="_blank">
+			<img id="insta" src="/imgs/instagram.png" alt=""></a> <a href="https://www.linkedin.com/in/jarno-bachmann-3b1022137/" target="_blank">
+			<img id="linkedin" src="/imgs/linkedin.png" alt=""></a>
+			</div>
+		</div>
+	<div class="section" id="section3">
+		<div class="text">
+			<h1>Collin Lambers</h1>
+				<br>
+		 	<h2> Programmeur </h2>
+			 <br>
+			<p> gamer en hacker als hobby's en een liefhebber van
+				<br>
+				grafisch design. Ik houd van het maken en
+				<br> onderhouden van webapplicaties en de beveiliging
+				<br> hiervan. Meer over mij? Kijk op mijn Portfolio.
+			</p>
+			<br>
+			<button href="#" target="_blank" id="button">Portfolio</button>
+    <a href="https://www.facebook.com/collin.lambers" target="_blank">
+			<img id="facebook" src="/imgs/facebook.png" alt="">
+		</a>
+		<a href="https://www.linkedin.com/in/collin-l-2ab581131/" target="_blank">
+			<img id="linkedin" src="/imgs/linkedin.png" alt="">
+		</a>
+	</div>
+</div>
 </div>
 
 </body>
