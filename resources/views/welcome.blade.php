@@ -64,7 +64,7 @@
 	}
 
 	#section0 .text {
-	  top: 30%;
+
 	  position: relative;
 	}
 
@@ -77,7 +77,7 @@
 	}
 
 	#section2 .text {
-	  top: 30%;
+
 	  left: 5%;
 	  position: relative;
 	}
@@ -91,7 +91,7 @@
 	}
 
 	#section3 .text {
-	  top: 30%;
+
 	  left: 60%;
 	  position: relative;
 	}
@@ -176,6 +176,7 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
+<script type="text/javascript" src="/js/scrolloverflow.js"></script>
 	<script type="text/javascript" src="/js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="/js/examples.js"></script>
 		<script type="text/javascript" src="/js/contact.js"></script>
@@ -183,7 +184,11 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				verticalCentered: false
+				anchors: ['firstPage', 'secondPage', '3rdPage'],
+				sectionsColor: ['#fff', '#fff', '#fff'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['KingsCode', 'Yarno', 'Collin']
 			});
 		});
 
@@ -193,14 +198,14 @@
 </head>
 <body>
 
-<nav id="menu">
+<!-- <nav id="menu">
 	<ul>
 	  <li style="margin-left:10%;"><a href="#section0">KingsCode</a></li>
 		<li style="float:right; margin-right:20%;"><a href="#section3">Collin</a></li>
 	  <li style="float:right; "><a href="#section2">Yarno</a></li>
 
 	</ul>
-</nav>
+</nav> -->
 
 
 	<div class="contact-panel" id="contact-panel" data-toggler=".is-active">
@@ -218,11 +223,11 @@
 	    </div>
 	    <div class="row">
 	      <label><h6>Bericht *</h6>
-	        <textarea placeholder="Vertelt u ons uw zonden" rows="3"></textarea>
+	        <textarea placeholder="Uw bericht" rows="3"></textarea>
 	      </label>
 	    </div>
 	    <div class="contact-panel-actions">
-	      <button class="cancel-button" data-toggle="contact-panel">Nee toch niet</button>
+	      <button class="cancel-button" id="close_btn" data-toggle=".is-active">Nee toch niet</button>
 	      <input type="submit" class="button submit-button" value="Verstuur">
 	    </div>
 	  </form>
@@ -248,7 +253,7 @@
 			<br>
 			<h2> Programmeur </h2>
 			 <br>
-			  <p> Fotograaf/filmmaker als hobby en een liefhebber van muziek<br>
+			  <p> Fotograaf/filmmaker als hobby. Een liefhebber van muziek<br>
 					 en creativiteit. Het maken van websites is mijn passie.<br>
 					 Check me op mijn portfolio en op instagram. </p>
 					  <br>
