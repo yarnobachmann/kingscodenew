@@ -7,7 +7,6 @@
 	<meta name="viewport" content="width=device-width" />
 	<meta name="Resource-type" content="Document" />
 
-
 	<link rel="stylesheet" type="text/css" href="/css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="/css/examples.css" />
 	<link rel="stylesheet" type="text/css" href="/css/style.css" />
@@ -164,6 +163,57 @@
 	  opacity: 1;
 	}
 
+	#yarnotext{
+		z-index: 10;
+		opacity: 0;
+		margin-left: -300px;
+	}
+	#yarnotext.active{
+		/*-webkit-transform: translate3d(134px, 0px, 0px);*/
+		/*-moz-transform: translate3d(134px, 0px, 0px);*/
+		/*-ms-transform:translate3d(134px, 0px, 0px);*/
+		/*transform: translate3d(134px, 0px, 0px);*/
+		-webkit-animation: fadeinout 1s linear forwards;
+		animation: fadeinout 1s linear forwards;
+	}
+
+	@-webkit-keyframes fadeinout {
+		0% { opacity: 0; margin-left: -300px; }
+
+		50% { opacity: 1; }
+
+		100% { opacity: 1; margin-left: 0px; }
+	}
+
+	@keyframes fadeinout {
+		0% { opacity: 0; margin-left: -300px;}
+		50% { opacity: 1; }
+
+		100% { opacity: 1; margin-left: 0px; }
+	}
+
+	#iphone3{
+		z-index: 12;
+	}
+	#iphone3.active{
+		-webkit-transform: translate3d(213px, 0px, 0px);
+		-moz-transform: translate3d(213px, 0px, 0px);
+		-ms-transform:translate3d(213px, 0px, 0px);
+		transform: translate3d(213px, 0px, 0px);
+	}
+
+	#iphone4{
+		z-index: 11;
+		left: 140px;
+	}
+
+	#iphone4.active{
+		-webkit-transform: translate3d(548px, 0px, 0px);
+		-moz-transform: translate3d(548px, 0px, 0px);
+		-ms-transform:translate3d(548px, 0px, 0px);
+		transform: translate3d(548px, 0px, 0px);
+	}
+
 
 	</style>
 
@@ -188,7 +238,25 @@
 				sectionsColor: ['#fff', '#fff', '#fff'],
 				navigation: true,
 				navigationPosition: 'right',
-				navigationTooltips: ['KingsCode', 'Yarno', 'Collin']
+				navigationTooltips: ['KingsCode', 'Yarno', 'Collin'],
+                'afterLoad': function(anchorLink, index){
+                    if(index == 2){
+                        $('#yarnotext').addClass('active');
+                    }
+                },
+
+                'onLeave': function(index, nextIndex, direction){
+                    if (index == 3 && direction == 'down'){
+                        $('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
+                    }
+                    else if(index == 3 && direction == 'up'){
+                        $('.section').eq(index -1).removeClass('moveUp').addClass('moveDown');
+                    }
+
+                    $('#yarnotext').toggleClass('active', (index == 2 && direction == 'down' ) || (index == 2 && direction == 'up'));
+                    
+                }
+
 			});
 		});
 
@@ -248,7 +316,7 @@
 	  </div>
 	</div>
 	<div class="section" id="section2">
-		<div class="text">
+		<div class="text"  id="yarnotext">
 			<h1>Yarno Bachmann</h1>
 			<br>
 			<h2> Programmeur </h2>
@@ -265,7 +333,9 @@
 			<img id="insta" src="/imgs/instagram.png" alt=""></a> <a href="https://www.linkedin.com/in/jarno-bachmann-3b1022137/" target="_blank">
 			<img id="linkedin" src="/imgs/linkedin.png" alt=""></a>
 			</div>
-		</div>
+
+
+	</div>
 	<div class="section" id="section3">
 		<div class="text">
 			<h1>Collin Lambers</h1>
