@@ -15,22 +15,18 @@
 	* --------------------------------------- */
 	h1{
 	  font-size: 4em;
-	  font-family: arial,helvetica;
 	  color: #fff;
 	}
 
 	h2{
 	  font-size: 2.2em;
-	  font-family: arial,helvetica;
 	  color: #fff;
-	  font-style: italic;
 
 	  margin-left: 10px;
 	}
 
 	p{
 	  font-size: 1.5em;
-	  font-family: arial,helvetica;
 	  color: #fff;
 
 	  margin-left: 9px;
@@ -56,19 +52,19 @@
 	* --------------------------------------- */
 
 	#section0{
-	  background-image: url(imgs/kingscode.jpg);
+	  background-image: url(imgs/backgrounds/kingscode.jpg);
 	  background-size: cover;
 	  background-repeat: no-repeat;
 	  background-position: 50% 30%;
 	}
 
 	#section0 .text {
-
 	  position: relative;
+	  margin-bottom: 7%;
 	}
 
 	#section2{
-	  background-image: url(imgs/yarno.jpg);
+	  background-image: url(imgs/backgrounds/yarno.jpg);
 	  background-size: cover;
 	  background-repeat: no-repeat;
 	  background-position: 50% 30%;
@@ -82,7 +78,7 @@
 	}
 
 	#section3{
-	  background-image: url(imgs/collin.jpg);
+	  background-image: url(imgs/backgrounds/collin.jpg);
 	  background-size: cover;
 	  background-repeat: no-repeat;
 	  background-position: 50% 30%;
@@ -180,18 +176,21 @@
 	@-webkit-keyframes fadeinout {
 		0% { opacity: 0; margin-left: -300px; }
 
-		50% { opacity: 1; }
+		50% { opacity: 1; margin-left: 0px;}
 
 		100% { opacity: 1; margin-left: 0px; }
 	}
 
 	@keyframes fadeinout {
 		0% { opacity: 0; margin-left: -300px;}
-		50% { opacity: 1; }
+
+		50% { opacity: 1; margin-left: 0px;}
 
 		100% { opacity: 1; margin-left: 0px; }
 	}
-
+	textarea {
+		resize: none;
+	}
 	#iphone3{
 		z-index: 12;
 	}
@@ -213,6 +212,7 @@
 		-ms-transform:translate3d(548px, 0px, 0px);
 		transform: translate3d(548px, 0px, 0px);
 	}
+
 
 
 	</style>
@@ -254,7 +254,7 @@
                     }
 
                     $('#yarnotext').toggleClass('active', (index == 2 && direction == 'down' ) || (index == 2 && direction == 'up'));
-                    
+
                 }
 
 			});
@@ -265,15 +265,6 @@
 	</script>
 </head>
 <body>
-
-<!-- <nav id="menu">
-	<ul>
-	  <li style="margin-left:10%;"><a href="#section0">KingsCode</a></li>
-		<li style="float:right; margin-right:20%;"><a href="#section3">Collin</a></li>
-	  <li style="float:right; "><a href="#section2">Yarno</a></li>
-
-	</ul>
-</nav> -->
 
 
 	<div class="contact-panel" id="contact-panel" data-toggler=".is-active">
@@ -291,7 +282,7 @@
 	    </div>
 	    <div class="row">
 	      <label><h6>Bericht *</h6>
-	        <textarea placeholder="Uw bericht" rows="3"></textarea>
+	        <textarea placeholder="Uw bericht" rows="4"></textarea>
 	      </label>
 	    </div>
 	    <div class="contact-panel-actions">
@@ -306,6 +297,7 @@
 <div id="fullpage">
 
 	<div class="section " id="section0">
+		<img src="imgs/logo/logo-kingscode.svg"style="height: 25%;" alt="kingscode">
 		<div class="text">
 			<h1>Kingscode</h1>
 			<br>
@@ -342,7 +334,7 @@
 				<br>
 		 	<h2> Programmeur </h2>
 			 <br>
-			<p> gamer en hacker als hobby's en een liefhebber van
+			<p> Gamer en hacker als hobby's en een liefhebber van
 				<br>
 				grafisch design. Ik houd van het maken en
 				<br> onderhouden van webapplicaties en de beveiliging

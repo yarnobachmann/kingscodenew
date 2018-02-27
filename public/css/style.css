@@ -9,21 +9,59 @@ html,body {
   user-select: none;          /* Likely future */
 }
 
+p {
+  font-family: cinzel-bold;
+}
+
+#button {
+  font-family: cinzel-bold;
+  font-weight: bolder;
+}
+
+a,h6{
+  font-family: cinzel-bold;
+}
+
+#section0 .text h1 {
+  font-family: butler-medium;
+}
+
+#section0 .text h2 {
+  font-family: butler-bold;
+}
+
+#section2 .text h1 {
+  font-family: butler-medium;
+}
+
+#section2 .text h2 {
+  font-family: butler-bold;
+}
+
+#section3 .text h1 {
+  font-family: butler-medium;
+}
+
+#section3 .text h2 {
+  font-family: butler-bold;
+}
+
+
 @media screen and (max-width: 480px) {
   #section0{
-    background-image: url(imgs/kingscode.jpg);
+    background-image: url(imgs/backgrounds/kingscode.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 30%;
   }
 
   #section0 .text {
-    top: 20%;
     position: relative;
   }
 
+
   #section2{
-    background-image: url(imgs/yarno.jpg);
+    background-image: url(imgs/backgrounds/yarno.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 30%;
@@ -37,7 +75,7 @@ html,body {
   }
 
   #section3{
-    background-image: url(imgs/collin.jpg);
+    background-image: url(imgs/backgrounds/collin.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 30%;
@@ -248,4 +286,20 @@ nav li a:hover:not(.active) {
 }
 
 nav .active {
+}
+
+
+@font-face {
+  font-family: butler-medium;
+  src: url(fonts/butler-medium.otf);
+}
+
+@font-face {
+  font-family: butler-bold;
+  src: url(fonts/butler-bold.otf);
+}
+
+@font-face {
+  font-family: cinzel-bold;
+  src: url(fonts/cinzel-bold.otf);
 }
