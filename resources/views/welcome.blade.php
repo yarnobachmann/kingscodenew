@@ -267,30 +267,7 @@
 <body>
 
 
-	<div class="contact-panel" id="contact-panel" data-toggler=".is-active">
-	  <a class="contact-panel-button" data-toggle="contact-panel">Stuur ons een mail! </a>
-	  <form action="">
-	    <div class="row">
-	      <label><h6>Volledige naam *</h6>
-	        <input type="text" placeholder="Volledige naam">
-	      </label>
-	    </div>
-	    <div class="row">
-	      <label><h6>Email *</h6>
-	        <input type="email" placeholder="Email adres">
-	      </label>
-	    </div>
-	    <div class="row">
-	      <label><h6>Bericht *</h6>
-	        <textarea placeholder="Uw bericht" rows="4"></textarea>
-	      </label>
-	    </div>
-	    <div class="contact-panel-actions">
-	      <button class="cancel-button" id="close_btn" data-toggle=".is-active">Nee toch niet</button>
-	      <input type="submit" class="button submit-button" value="Verstuur">
-	    </div>
-	  </form>
-	</div>
+	
 
 
 
