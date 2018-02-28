@@ -10,6 +10,18 @@
     					 en creativiteit. Het maken van websites is mijn passie.
     					 Check me op mijn portfolio en op instagram.
            </p>
+           <div class="justify-c d-none animated-yarno link-animate-yarno">
+             <a href="https://www.yarnobachmann.nl/" class="button cinzel-bold" style="height: 100%;" target="_blank">Portfolio</a>
+             <a href="https://www.facebook.com/profile.php?id=100011364568974" class="app-link" target="_blank">
+               <img class="apps" src="{{ URL::asset('/imgs/apps/facebook.svg') }}" alt="facebook" style="width: 7%;">
+             </a>
+             <a href="https://www.linkedin.com/in/jarno-bachmann-3b1022137/" class="app-link" target="_blank">
+               <img class="apps" src="{{ URL::asset('/imgs/apps/linkedin.svg') }}" alt="linkedin" style="width: 7%;">
+             </a>
+             <a href="https://www.instagram.com/_yarno_/" class="app-link" target="_blank">
+               <img class="apps" src="{{ URL::asset('/imgs/apps/instagram.svg') }}" alt="instagram" style="width: 7%;">
+             </a>
+           </div>
         </div>
     </div>
 

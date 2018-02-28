@@ -82,6 +82,7 @@ function loaded(){
             var delay           = '500';
 
             if(anchorLink == 'kingscode'){
+                crownAnimationEnter()
                 yarnoAnimationLeave()
         	}
 
@@ -97,17 +98,39 @@ function loaded(){
     });
 }
 
+function crownAnimationEnter(){
+    var crown = $('.crown');
+
+    crown.removeClass(hidden).addClass('slideInDown');
+
+    setTimeout(function(){
+      crown.removeClass('slideInDown');
+      crown.addClass('hover');
+      crown.addClass('infinite');
+    }, 1200);
+}
+
 
 function yarnoAnimationEnter(){
     var yarno = $('.yarno-animate');
+    var links = $('.link-animate-yarno');
 
     yarno.removeClass(hidden).addClass('slideInLeft');
+
+
+    setTimeout(function(){
+      links.removeClass(hidden);
+      links.addClass('slideInLeft');
+    }, 200);
 
 }
 
 function yarnoAnimationLeave(){
     var yarno = $('.yarno-animate');
+    var links = $('.link-animate-yarno');
 
     yarno.addClass(hidden).removeClass('slideInLeft');
+    links.addClass(hidden).removeClass('slideInLeft');
+
 
 }
