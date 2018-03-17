@@ -10,9 +10,9 @@
             <h1 class="butler-medium" style="margin-top: 5px;">Collin Lambers</h1>
             <h3 class="butler-bold italic" style="margin-top: 5px; opacity: 0.8;">Programmeur</h3>
             <p class="cinzel-bold" style="margin-top: 5px;">
-              Gamer en hacker als hobbys en een liefhebber van grafies design.
+              Gamer en hacker als hobbys en een liefhebber van grafisch design.
               Ik houd van het maken en onderhouden van webapplicaties en de beveiliging hiervan.
-              Meer over mij? Kijk op mijn Portfolio.
+              Meer over mij? Kijk op mijn portfolio.
            </p>
            <div class="justify-c d-none animated-yarno link-animate-collin">
              <a href="#" class="button cinzel-bold" style="height: 100%;" target="_blank">Portfolio</a>
