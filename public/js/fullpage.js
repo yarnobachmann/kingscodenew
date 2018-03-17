@@ -17,10 +17,10 @@ function loaded(){
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['kingscode', 'yarno', 'collin'],
+        anchors:['kingscode', 'yarno', 'collin', 'contact'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['KingsCode', 'Yarno', 'Collin'],
+        navigationTooltips: ['KingsCode', 'Yarno', 'Collin' , 'Contact'],
         showActiveTooltip: true,
 
         //Scrolling
@@ -65,7 +65,7 @@ function loaded(){
         sectionSelector: '.section',
         slideSelector: '.slide',
 
-        lazyLoading: true,
+        lazyLoading: false,
 
         //events
         afterLoad: function(anchorLink, index){
@@ -84,15 +84,27 @@ function loaded(){
             if(anchorLink == 'kingscode'){
                 crownAnimationEnter()
                 yarnoAnimationLeave()
+                collinAnimationLeave()
+                contactAnimationLeave()
         	}
 
             if(anchorLink == 'yarno'){
                 yarnoAnimationEnter();
+                collinAnimationLeave();
+                contactAnimationLeave()
         	}
 
             if(anchorLink == 'collin'){
+                collinAnimationEnter()
                 yarnoAnimationLeave()
+                contactAnimationLeave()
         	}
+
+          if(anchorLink == 'contact'){
+              contactAnimationEnter()
+              collinAnimationLeave()
+              yarnoAnimationLeave()
+        }
 
         }
     });
@@ -110,27 +122,59 @@ function crownAnimationEnter(){
     }, 1200);
 }
 
+var yarno = $('.yarno-animate');
+var linksy = $('.link-animate-yarno');
+
+var collin = $('.collin-animate');
+var linksc = $('.link-animate-collin');
+
+var contact = $('.contact-animate');
+var contact_button = $('.contact-button');
 
 function yarnoAnimationEnter(){
-    var yarno = $('.yarno-animate');
-    var links = $('.link-animate-yarno');
 
     yarno.removeClass(hidden).addClass('slideInLeft');
 
-
     setTimeout(function(){
-      links.removeClass(hidden);
-      links.addClass('slideInLeft');
+      linksy.removeClass(hidden);
+      linksy.addClass('slideInLeft');
     }, 200);
-
 }
 
 function yarnoAnimationLeave(){
-    var yarno = $('.yarno-animate');
-    var links = $('.link-animate-yarno');
 
     yarno.addClass(hidden).removeClass('slideInLeft');
-    links.addClass(hidden).removeClass('slideInLeft');
+    linksy.addClass(hidden).removeClass('slideInLeft');
+}
 
+function collinAnimationEnter(){
+
+    collin.removeClass(hidden).addClass('slideInRight');
+
+    setTimeout(function(){
+      linksc.removeClass(hidden);
+      linksc.addClass('slideInRight');
+    }, 200);
+}
+
+function collinAnimationLeave(){
+
+    collin.addClass(hidden).removeClass('slideInRight');
+    linksc.addClass(hidden).removeClass('slideInRight');
+}
+
+function contactAnimationEnter(){
+
+    contact.removeClass(hidden).addClass('slideInUp');
+
+    setTimeout(function(){
+      contact_button.removeClass(hidden).addClass('slideInUp');
+    }, 500);
+}
+
+function contactAnimationLeave(){
+
+    contact.addClass(hidden).removeClass('slideInUp');
+    contact_button.addClass(hidden).removeClass('slideInUp');
 
 }

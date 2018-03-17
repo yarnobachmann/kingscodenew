@@ -1,8 +1,8 @@
 <div class="section-wrapper flex-r align-v col-12 no-padding-margin yarno" style="height: 100vh; width: 100vw;">
 
-  <div class="col-12 d-none animated-yarno align-v justify-c yarno-animate">
+  <div class="col-5 offset-1  align-v justify-c ">
 
-        <div class="col-4 offset-1" style="text-align: left; ">
+        <div class="col-10 d-none animated-yarno yarno-animate" style="text-align: left; ">
             <h1 class="butler-medium" style="margin-top: 5px;">Yarno Bachmann</h1>
             <h3 class="butler-bold italic" style="margin-top: 5px; opacity: 0.8;">Programmeur</h3>
             <p class="cinzel-bold" style="margin-top: 5px;">
@@ -23,6 +23,9 @@
              </a>
            </div>
         </div>
+    </div>
+    <div class="col-9" style="bottom: 0; height: 100vh; width: 100vw;">
+      <img src="{{ URL::asset('/imgs/png/yarno.png') }}" alt="" width="60%" style="bottom: 0; position: absolute;">
     </div>
 
 </div>

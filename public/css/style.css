@@ -21,6 +21,25 @@ p{
   color: #fff;
 }
 
+button{
+  background: none;
+}
+
+label{
+  font-size: 1.4em;
+  font-family: butler-bold;
+  color: #fff;
+  text-align: left;
+}
+
+input{
+  font-family: butler-bold;
+}
+
+textarea{
+  font-family: butler-bold;
+}
+
 .app-link {
   margin-left: 15px;
 }
@@ -30,7 +49,7 @@ p{
 }
 
 .button {
-  border: 3px solid rgba(119, 119, 119, 0.8);
+  border: 3px solid #6F9771;
   border-radius: 10%;
   padding: 1% 3% 1% 3%;
   font-size: 1em;
@@ -38,12 +57,30 @@ p{
 }
 
 .button:hover {
-  border: 3px solid rgba(119, 119, 119, 0.8);
+  border: 3px solid #6F9771;
   border-radius: 10%;
   padding: 1% 3% 1% 3%;
   text-decoration: none;
   color: rgba(255,255,255, 0.8);
-  background-color: rgba(119, 119, 119, 0.8);
+  background-color: #6F9771;
+}
+
+.button-king {
+  border: 3px solid #ffa53f;
+  border-radius: 10%;
+  padding: 1% 3% 1% 3%;
+  font-size: 1em;
+  color: rgba(255,255,255, 0.8);
+  background-color: #ffa53f;
+}
+
+.button-king:hover {
+  border: 3px solid #ffa53f;
+  border-radius: 10%;
+  padding: 1% 3% 1% 3%;
+  text-decoration: none;
+  color: rgba(255,255,255, 0.8);
+  background-color: #ffa53f;
 }
 
 .apps {
@@ -79,11 +116,12 @@ p{
 }
 
 .butler-bold {
-    font-family: butler-bold;
+font-family: butler-bold;
+
 }
 
 .cinzel-bold {
-    font-family: cinzel-bold;
+      font-family: butler-bold;
 }
 
 .uppercase {
@@ -148,26 +186,23 @@ p{
 /* KingsCode tab */
 
 .kingscode {
-  background-image: url(/imgs/backgrounds/kingscode.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 30%;
+  background: #6F9771;
 }
 
 /* Yarno tab */
 
 .yarno {
-  background-image: url(/imgs/backgrounds/yarno.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 30%;
+  background: #528C94;
 }
 
 /* Collin tab */
 
 .collin {
-  background-image: url(/imgs/backgrounds/collin.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 30%;
+  background: #5F7FAF;
+}
+
+/* Contact tab */
+
+.contact {
+  background: #383838;
 }
