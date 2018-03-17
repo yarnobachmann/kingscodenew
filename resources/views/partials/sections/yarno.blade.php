@@ -8,7 +8,7 @@
             <p class="cinzel-bold" style="margin-top: 5px;">
                Fotograaf/filmmaker als hobby. Een liefhebber van muziek
     					 en creativiteit. Het maken van websites is mijn passie.
-    					 Check me op mijn portfolio en op instagram.
+    					 Check mijn portfolio en Instagram.
            </p>
            <div class="justify-c d-none animated-yarno link-animate-yarno">
              <a href="https://www.yarnobachmann.nl/" class="button cinzel-bold" style="height: 100%;" target="_blank">Portfolio</a>
