@@ -5,8 +5,8 @@
             <img class="crown d-none animated" src="{{ URL::asset('/imgs/logo/logo-kingscode.svg') }}" style="width: 15%;" alt="kingscode">
             <h1 class="butler-medium" style="margin-top: 5px;">KingsCode</h1>
             <h3 class="butler-bold" style="margin-top: 5px; opacity: 0.8;">Webdesign</h3>
-            <p class="cinzel-bold text-c" style="margin-top: 5px; width: 40%;">Kingscode is een programmeurs bedrijf die websites voor iedereen programmeert.
-            Dus wilt u een website zoek dan contact met ons op.</p>
+            <p class="cinzel-bold text-c" style="margin-top: 5px; width: 40%;">Kingscode is een programmeurs bedrijf die zich bezig houd met webdesign.
+            Bent u geïnteresseerd? Neem dan <a href="#contact">contact</a> met ons op!</p>
 
     </div>
 

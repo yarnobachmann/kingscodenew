@@ -21,6 +21,16 @@ p{
   color: #fff;
 }
 
+.kingscode a{
+  color: white;
+  text-decoration: underline;
+}
+
+.kingscode a:hover{
+  color: rgb(224, 224, 224);
+  text-decoration: underline;
+}
+
 button{
   background: none;
 }
