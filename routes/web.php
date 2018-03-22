@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('partials.sections');
-});
+
+Route::get('/', 'pagesController@index');
+
+Route::post('/', 'pagesController@contact');
