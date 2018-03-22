@@ -24,4 +24,6 @@
 
 </div>
 
+<h3 style="bottom: 0; right: 1%; position: absolute;">kvk: 70894191</h3>
+
 </div>
