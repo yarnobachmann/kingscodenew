@@ -1,8 +1,8 @@
 <div class="section-wrapper flex-r align-v col-12 no-padding-margin contact" style="height: 100vh; width: 100vw;">
 
-  <div class="col-5 align-v justify-c d-none animated-yarno contact-animate" style="position:relative; margin: auto;">
-    <h1 class="text-c butler-medium">Stuur ons een mail!</h2>
-            <p class="text-c cinzel-bold">Wij willen samen met u tot een mooi eindproduct komen.</p>
+  <div class="col-12 col-md-5 col-lg-5 align-v justify-c d-none animated-yarno contact-animate" style="position:relative; margin: auto;">
+    <h1 class="text-c butler-medium ">Stuur ons een mail!</h2>
+            
 
 
                 {!! Form::open(['class' => 'form-horizontal', 'action' => 'pagesController@contact']) !!}
@@ -26,6 +26,6 @@
 
 </div>
 
-<h3 style="bottom: 0; right: 1%; position: absolute;">kvk: 70894191</h3>
+<h3 class="kvk-text" style="bottom: 0; right: 1%; position: absolute;">kvk: 70894191</h3>
 
 </div>

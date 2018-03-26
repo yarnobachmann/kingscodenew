@@ -134,11 +134,9 @@ var contact_button = $('.contact-button');
 function yarnoAnimationEnter(){
 
     yarno.removeClass(hidden).addClass('slideInLeft');
+    linksy.removeClass(hidden);
+    linksy.addClass('slideInLeft');
 
-    setTimeout(function(){
-      linksy.removeClass(hidden);
-      linksy.addClass('slideInLeft');
-    }, 200);
 }
 
 function yarnoAnimationLeave(){
@@ -150,11 +148,9 @@ function yarnoAnimationLeave(){
 function collinAnimationEnter(){
 
     collin.removeClass(hidden).addClass('slideInRight');
+    linksc.removeClass(hidden);
+    linksc.addClass('slideInRight');
 
-    setTimeout(function(){
-      linksc.removeClass(hidden);
-      linksc.addClass('slideInRight');
-    }, 200);
 }
 
 function collinAnimationLeave(){
