@@ -25,7 +25,7 @@
         </div>
     </div>
     <div class="col-9" style="bottom: 0; height: 100vh; width: 100vw;">
-      <img src="{{ URL::asset('/imgs/png/yarno.png') }}" alt="" class="hidden-sm-down" width="60%" style="bottom: 0; position: absolute;">
+      <img src="{{ URL::asset('/imgs/png/yarno.png') }}" alt="" class="hidden-sm-down" width="40%" style="bottom: 0; position: absolute; right: 40%;">
     </div>
 
 </div>
