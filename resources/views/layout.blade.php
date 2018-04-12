@@ -5,10 +5,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="keywords" content="webdesign, collin, bachmann, yarno, responsive, programmeur, projects, emmen, drenthe, lambers, web, king, kingscode, mobile, kings, website, laravel">
+        <meta name="description" content="Kingscode is een programmeurs bedrijf die zich bezig houd met webdesign.
+        Bent u geïnteresseerd? Neem dan contact met ons op!">
 
-        <meta name="description" content="kingscode">
-
-        <title>KingsCode</title>
+        <title>KingsCode | Webdesign voor iedereen</title>
 
         <link rel="icon" href="{{ URL::asset('/imgs/logo/favicon.png') }}">
 
