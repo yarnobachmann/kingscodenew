@@ -1,7 +1,7 @@
 <div class="section-wrapper flex-r align-v col-12 no-padding-margin collin" style="height: 100vh; width: 100vw;">
 
   <div class="col-5 hidden-sm-down" style="bottom: 0; height: 100vh; width: 100vw; padding-left: 0px;">
-    <img src="{{ URL::asset('/imgs/png/collin.png') }}" class="hidden-sm-down" alt="" width="100%" style="bottom: 0; position: absolute;">
+    <img src="{{ URL::asset('/imgs/png/collin.png') }}" class="hidden-sm-down" alt="" width="50%" style="bottom: 0; left: 5%; position: absolute;">
   </div>
 
   <div class="col-12 col-md-5 col-lg-5 offset-1  align-v justify-c ">
